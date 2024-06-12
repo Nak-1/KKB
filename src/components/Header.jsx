@@ -1,5 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import Logo1 from "../assets/logo.png";
+import Logo2 from "../assets/logo_w.png";
 
 const Header = () => {
   const location = useLocation();
@@ -8,18 +10,9 @@ const Header = () => {
     switch (pathname) {
       case "/company":
         return { color: "black" };
-      // case '/about':
-      //   return { backgroundColor: 'green', color: 'white' };
-      // case '/contact':
-      //   return { backgroundColor: 'red', color: 'white' };
       default:
         return { color: "white" };
     }
-    // if (pathname === "/") {
-    //   return { color: "white" };
-    // } else {
-    //   return { color: "black" };
-    // }
   };
   // function() {
   //   $("#wrap").toggleClass('menuOpen');
@@ -27,16 +20,31 @@ const Header = () => {
   return (
     <div id="topPage">
       <div id="wrap">
-        <header id="header" class="clearType">
+        <header
+          id="header"
+          class="clearType"
+          style={{
+            backgroundColor: `${pathname === "/" ? "" : "white"}`,
+          }}
+        >
           <a href="/">
-            <h1 class="logo" style={{}}>
-              KKB 株式会社国分商会
-            </h1>
+            <h1
+              style={{
+                width: "322px",
+                height: "34px",
+                backgroundImage: `url(${pathname === "/" ? Logo2 : Logo1})`,
+              }}
+            ></h1>
           </a>
           <nav id="gNavi">
             <ul>
               <li>
-                <a href="/company/">会社情報</a>
+                <a
+                  href="/company/"
+                  style={{ color: `${pathname === "/" ? "white" : "black"}` }}
+                >
+                  会社情報
+                </a>
                 <ul class="accordion">
                   <li>
                     <a href="/company/">会社情報</a>
@@ -56,7 +64,12 @@ const Header = () => {
                 </ul>
               </li>
               <li>
-                <a href="/annai/">事業拠点</a>
+                <a
+                  href="/annai/"
+                  style={{ color: `${pathname === "/" ? "white" : "black"}` }}
+                >
+                  事業拠点
+                </a>
                 <ul class="accordion">
                   <li>
                     <a href="/annai/">事業拠点</a>
@@ -82,7 +95,12 @@ const Header = () => {
                 </ul>
               </li>
               <li>
-                <a href="/business/">事業紹介</a>
+                <a
+                  href="/business/"
+                  style={{ color: `${pathname === "/" ? "white" : "black"}` }}
+                >
+                  事業紹介
+                </a>
                 <ul class="accordion">
                   <li>
                     <a href="/business/">事業紹介</a>
@@ -115,7 +133,12 @@ const Header = () => {
                 </ul>
               </li>
               <li>
-                <a href="/compliance/">コンプライアンス</a>
+                <a
+                  href="/compliance/"
+                  style={{ color: `${pathname === "/" ? "white" : "black"}` }}
+                >
+                  コンプライアンス
+                </a>
                 <ul class="accordion">
                   <li>
                     <a href="/compliance/">コンプライアンス</a>
@@ -140,22 +163,41 @@ const Header = () => {
                 </ul>
               </li>
               <li>
-                <a href="/#area06" class="scroll">
+                <a
+                  href="/#area06"
+                  class="scroll"
+                  style={{ color: `${pathname === "/" ? "white" : "black"}` }}
+                >
                   ニュースリリース
                 </a>
               </li>
               <li>
-                <a href="/otoiawase/">お問合せ</a>
+                <a
+                  href="/otoiawase/"
+                  style={{ color: `${pathname === "/" ? "white" : "black"}` }}
+                >
+                  お問合せ
+                </a>
               </li>
               <li>
-                <a href="/eng/">English</a>
+                <a
+                  href="/eng/"
+                  style={{ color: `${pathname === "/" ? "white" : "black"}` }}
+                >
+                  English
+                </a>
               </li>
             </ul>
             <div class="openClose">
               <span class="line"></span>
               <span class="txt">
                 <span class="sp">Menu</span>
-                <span class="pc">アクセス</span>
+                <span
+                  class="pc"
+                  style={{ color: `${pathname === "/" ? "white" : "black"}` }}
+                >
+                  アクセス
+                </span>
               </span>
             </div>
             <div id="menu" class="fullHeight">

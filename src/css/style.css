@@ -1827,7 +1827,7 @@ img {
 }
 #mainContent .listStyle01 li {
   background: url("../assets/bk01.png") #eee;
-  height: 75vh;
+  /* height: 75vh; */
   width: 30%;
   margin-left: 5%;
   float: left;
@@ -3035,6 +3035,10 @@ img {
 
 #topPage #header.clearType {
   background: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
 }
 @media screen and (max-width: 767px) {
   #topPage #header.clearType {
@@ -3042,18 +3046,18 @@ img {
   }
 }
 
-#topPage #header.clearType .logo {
+/* #topPage #header.clearType .logo {
   background-image: url("../assets/logo_w.png");
 }
 @media screen and (max-width: 767px) {
   #topPage #header.clearType .logo {
     background-image: url("../assets/logo.png");
   }
-}
-#topPage #header.clearType #gNavi ul li a {
+} */
+/* #topPage #header.clearType #gNavi ul li a {
   color: #fff;
 }
-/* @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   #topPage #header.clearType #gNavi ul li a {
     color: #000;
   }

@@ -22,9 +22,10 @@ const EngContact = () => {
                 <div class="contBoxinner">
                   <div class="formBox">
                     <h2>
-                      Your source for Japan used tires & scrap tire materials
+                      Your source for Japan used tires &amp; scrap tire
+                      materials
                     </h2>
-                    <p class="lead" style="text-align:left">
+                    <p class="lead" style={{ textAlign: "left" }}>
                       For more information on how we can reliably fulfill your
                       order for Japan used tires and tire scrap materials,
                       please fill in the contact form below. We are happy to
@@ -43,15 +44,15 @@ const EngContact = () => {
                       <input
                         type="hidden"
                         name="recaptchaToken"
-                        id="r/ecaptchaToken"
+                        id="recaptchaToken"
                       />
                       <div
                         id="error_message"
-                        style="color:red;font-weight:bold;"
+                        style={{ color: "red", fontWeight: "bold" }}
                       >
                         Error, please provide the required information.
                       </div>
-                      <div class="label first">
+                      <div class="label first" style={{ height: "73px" }}>
                         <label>
                           Company name <span class="req">*</span>
                         </label>
@@ -59,7 +60,7 @@ const EngContact = () => {
                       <div class="field first">
                         <input type="text" name="company_s" id="company" />
                       </div>
-                      <div class="label">
+                      <div class="label" style={{ height: "72px" }}>
                         <label>
                           Country <span class="req">*</span>
                         </label>
@@ -67,7 +68,7 @@ const EngContact = () => {
                       <div class="field">
                         <input type="text" name="country_s" id="country" />
                       </div>
-                      <div class="label">
+                      <div class="label" style={{ height: "123px" }}>
                         <label>
                           Name of contact person <span class="req">*</span>
                         </label>
@@ -75,29 +76,29 @@ const EngContact = () => {
                       <div class="field nameBlock">
                         <span>First name</span>
                         <input type="text" name="first_s" id="first" />
-                        /
+
                         <br />
                         <span>Last name</span>
-                        <input type="text" name="last_s" id="last" />/
+                        <input type="text" name="last_s" id="last" />
                       </div>
-                      <div class="label">
+                      <div class="label" style={{ height: "73px" }}>
                         <label>
                           Phone number <span class="req">*</span>
                         </label>
                       </div>
                       <div class="field">
-                        <input type="text" name="phone_s" id="phone" />/
+                        <input type="text" name="phone_s" id="phone" />
                       </div>
-                      <div class="label">
+                      <div class="label" style={{ height: "73px" }}>
                         <label>
                           Email address <span class="req">*</span>
                         </label>
                       </div>
                       <div class="field">
-                        <input type="text" name="email_s" id="email" />/
+                        <input type="text" name="email_s" id="email" />
                       </div>
 
-                      <div class="label">
+                      <div class="label" style={{ height: "543px" }}>
                         <label>Quotation request</label>
                       </div>
                       <div class="field inquiryField">
@@ -106,24 +107,20 @@ const EngContact = () => {
                             <input
                               type="radio"
                               name="purchase_s"
-                              id="purcha/se01"
+                              id="purchase01"
                               value="Purchase for import"
                             />
                             <label for="purchase01">Purchase for import</label>
                             <div class="inner">
                               <span>Port of discharge</span>
-                              <input
-                                type="text"
-                                name="port_s"
-                                id="port"
-                              />/{" "}
+                              <input type="text" name="port_s" id="port" />
                             </div>
                           </div>
                           <div class="purchaseBox">
                             <input
                               type="radio"
                               name="purchase_s"
-                              id="purcha/se02"
+                              id="purchase02"
                               value="Purchase for Japan"
                             />
                             <label for="purchase02">Purchase for Japan</label>
@@ -190,28 +187,28 @@ const EngContact = () => {
                             <input
                               type="checkbox"
                               name="item_s[]"
-                              id="item0/1"
+                              id="item01"
                               value="Used tires"
                             />
                             <label for="item01">Used tires</label>
                             <input
                               type="checkbox"
                               name="item_s[]"
-                              id="item0/2"
+                              id="item02"
                               value="Casings Tire"
                             />
                             <label for="item02">Casings</label>
                             <input
                               type="checkbox"
                               name="item_s[]"
-                              id="item0/3"
+                              id="item03"
                               value="Rubber material"
                             />
                             <label for="item03">Rubber material</label>
                             <input
                               type="checkbox"
                               name="item_s[]"
-                              id="item0/4"
+                              id="item04"
                               value="Other"
                             />
                             <label for="item04">Other</label>
@@ -231,7 +228,7 @@ const EngContact = () => {
                           ></textarea>
                         </div>
                       </div>
-                      <div class="label">
+                      <div class="label" style={{ height: "245px" }}>
                         <label>Comments and inquiries</label>
                       </div>
                       <div class="field">
@@ -243,28 +240,27 @@ const EngContact = () => {
                       </div>
                       <div class="btnBox01">
                         <div class="submitBox">
-                          <input type="submit" value="Send" />/{" "}
+                          <input type="submit" value="Send" />
                         </div>
                       </div>
                     </form>
                     <script src="https://www.google.com/recaptcha/api.js?render=6Lf_j1gmAAAAALZFKxZWd1-MqfEOZKd02Sp3w9sG"></script>
                     <script>
                       {/* document.getElementById("mail_form").addEventListener('submit', onSubmit);
-
-                        function onSubmit(e) 
-                    {
+                      function onSubmit(e) 
+                      {
                         e.preventDefault();
                         grecaptcha.ready(function() 
                         {
-                            grecaptcha.execute('6Lf_j1gmAAAAALZFKxZWd1-MqfEOZKd02Sp3w9sG', {action: 'submit'}).then(function(token)
-                            {
-                                // Add your logic to submit to your backend server here.
-                                var recaptchaToken = document.getElementById('recaptchaToken');
-                                recaptchaToken.value = token;
-                                document.getElementById("mail_form").submit();
-                            });
+                          grecaptcha.execute('6Lf_j1gmAAAAALZFKxZWd1-MqfEOZKd02Sp3w9sG', {action: 'submit'}).then(function(token)
+                          {
+                            // Add your logic to submit to your backend server here.
+                            var recaptchaToken = document.getElementById('recaptchaToken');
+                            recaptchaToken.value = token;
+                            document.getElementById("mail_form").submit();
+                          });
                         });
-                    } */}
+                      } */}
                     </script>
                   </div>
                 </div>

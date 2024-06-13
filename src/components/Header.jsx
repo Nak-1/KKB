@@ -2,21 +2,20 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import Logo1 from "../assets/logo.png";
 import Logo2 from "../assets/logo_w.png";
+import location1 from "../assets/icon_access.svg";
+import locatoin2 from "../assets/iconmonstr-location-1.svg";
 
 const Header = () => {
   const location = useLocation();
   const { pathname } = location;
-  const getHeaderStyle = () => {
-    switch (pathname) {
-      case "/company":
-        return { color: "black" };
-      default:
-        return { color: "white" };
-    }
-  };
-  // function() {
-  //   $("#wrap").toggleClass('menuOpen');
-  // }
+  // const getHeaderStyle = () => {
+  //   switch (pathname) {
+  //     case "/company":
+  //       return { color: "black" };
+  //     default:
+  //       return { color: "white" };
+  //   }
+  // };
   return (
     <div id="topPage">
       <div id="wrap">
@@ -189,7 +188,12 @@ const Header = () => {
               </li>
             </ul>
             <div class="openClose">
-              <span class="line"></span>
+              <span
+                class="line"
+                style={{
+                  background: `url(${pathname === "/" ? location1 : locatoin2}) no-repeat center`,
+                }}
+              ></span>
               <span class="txt">
                 <span class="sp">Menu</span>
                 <span

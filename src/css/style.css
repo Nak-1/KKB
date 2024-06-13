@@ -831,7 +831,7 @@ img {
   margin: 20px 0 5px;
   background: url("../assets/icon_access.svg") no-repeat center;
 }
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
   #header #gNavi .openClose .line {
     height: 2px;
     width: 40px;
@@ -858,7 +858,7 @@ img {
     bottom: -6px;
     cursor: pointer;
   }
-}
+} */
 #header #gNavi .openClose .txt {
   color: #fff;
   font-size: 14px;

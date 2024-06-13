@@ -1,9 +1,59 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { useEnglish } from "../context/EnglishContext";
+import img1 from "../assets/eng/image copy 3.png";
+import img2 from "../assets/eng/image copy 4.png";
+import img3 from "../assets/eng/image copy 5.png";
+
+const images = [`${img1}`, `${img2}`, `${img3}`];
+const BackgroundSlider = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [prevImageIndex, setPrevImageIndex] = useState(images.length - 1);
+  const [fade, setFade] = useState(true);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setFade(false);
+      setTimeout(() => {
+        setPrevImageIndex(currentImageIndex);
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+        setFade(true);
+      }, 1000); // Match the CSS transition duration
+    }, 5000); // Change image every 5 seconds
+    return () => clearInterval(intervalId);
+  }, [currentImageIndex]);
+
+  return (
+    <div>
+      <div
+        style={{
+          backgroundImage: `url(${images[currentImageIndex]})`,
+          opacity: `${fade ? 1 : 0}`,
+        }}
+      ></div>
+      <div
+        style={{
+          backgroundImage: `url(${images[prevImageIndex]})`,
+          opacity: `${fade ? 0 : 1}`,
+        }}
+      ></div>
+    </div>
+  );
+};
 
 const English = () => {
+  const { setIsEnglishPage } = useEnglish();
+
+  useEffect(() => {
+    setIsEnglishPage(true);
+    return () => setIsEnglishPage(false);
+  }, [setIsEnglishPage]);
   return (
     <body id="topPage">
       <div id="wrap">
+        <div id="mvBlock">
+      <BackgroundSlider />
+
+        </div>
         <div id="mainContent">
           <div class="msgBlock">
             <h2>
@@ -15,7 +65,7 @@ const English = () => {
             </h2>
             <ul>
               <li>
-                <div class="txt">
+                <div class="txt" style={{ height: "344px" }}>
                   <h3>Great support</h3>
                   <p>
                     "A big thank you to the KKB staff for their big support. You
@@ -28,10 +78,10 @@ const English = () => {
                     Customer for 1 year
                   </span>
                 </div>
-                <div class="img"></div>
+                <div class="img" style={{ height: "344px" }}></div>
               </li>
               <li>
-                <div class="txt">
+                <div class="txt" style={{ height: "344px" }}>
                   <h3>Nothing but praise</h3>
                   <p>
                     "I enjoy working with KKB because the system works so well
@@ -44,7 +94,7 @@ const English = () => {
                     Customer for over 10 years
                   </span>
                 </div>
-                <div class="img"></div>
+                <div class="img" style={{ height: "344px" }}></div>
               </li>
             </ul>
             <div class="more">
@@ -56,46 +106,47 @@ const English = () => {
           <div class="cstmrBlock">
             <h2>Customers</h2>
             <ul>
-              <li>
-                <p>Br/idgestone Corporation</p>
+              <li style={{ height: "89px" }}>
+                <p>Bridgestone Corporation</p>
               </li>
-              <li>
+              <li style={{ height: "89px" }}>
                 <p>
-                  Br/idgestone Off-The-Road Tire Sales &<br />
+                  Bridgestone Off-The-Road Tire Sales &amp;
+                  <br />
                   Service Co., Ltd.
                 </p>
               </li>
-              <li>
-                <p>Br/idgestone Tire Japan Co., Ltd.</p>
+              <li style={{ height: "89px" }}>
+                <p>Bridgestone Tire Japan Co., Ltd.</p>
               </li>
-              <li>
-                <p>Br/idgestone Retail Japan Co., Ltd.</p>
+              <li style={{ height: "89px" }}>
+                <p>Bridgestone Retail Japan Co., Ltd.</p>
               </li>
-              <li>
-                <p>Br/idgestone BR/M Co., Ltd.</p>
+              <li style={{ height: "89px" }}>
+                <p>Bridgestone BRM Co., Ltd.</p>
               </li>
-              <li>
+              <li style={{ height: "89px" }}>
                 <p>The Yokohama Rubber Co., Ltd.</p>
               </li>
-              <li>
+              <li style={{ height: "89px" }}>
                 <p>Yokohama Tire Japan Co., Ltd.</p>
               </li>
-              <li>
-                <p>TOYO TIRE & RUBBER Co., Ltd.</p>
+              <li style={{ height: "89px" }}>
+                <p>TOYO TIRE &amp; RUBBER Co., Ltd.</p>
               </li>
-              <li>
+              <li style={{ height: "89px" }}>
                 <p>TOYO TIRE JAPAN Co., Ltd.</p>
               </li>
-              <li>
+              <li style={{ height: "89px" }}>
                 <p>DUNLOP TYRE CYUOU Co., Ltd.</p>
               </li>
-              <li>
+              <li style={{ height: "89px" }}>
                 <p>DUNLOP TYRE KANTO Co., Ltd.</p>
               </li>
-              <li>
+              <li style={{ height: "89px" }}>
                 <p>SAITAMA TOYOTA MOTOR SALES Co., Ltd.</p>
               </li>
-              <li>
+              <li style={{ height: "89px" }}>
                 <p>TOYOTA Rent-A-Lease SAITAMA Co., Ltd.</p>
               </li>
             </ul>
@@ -109,7 +160,9 @@ const English = () => {
           </div>
           <div class="prdctBlock products">
             <div class="txt">
-              <h2>Used wholesale tires, tire casings & scrap tire materials</h2>
+              <h2>
+                Used wholesale tires, tire casings &amp; scrap tire materials
+              </h2>
               <p>
                 With four decades of experience, KKB has become a leader in the
                 recycling and export of Japanese used tires and scrap tire
@@ -181,4 +234,5 @@ const English = () => {
     </body>
   );
 };
+
 export default English;

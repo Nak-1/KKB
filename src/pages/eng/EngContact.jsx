@@ -24,7 +24,7 @@ const EngContact = () => {
                     <h2>
                       Your source for Japan used tires & scrap tire materials
                     </h2>
-                    <p class="lead" style={{ textAlign: "left" }}>
+                    <p class="lead" style="text-align:left">
                       For more information on how we can reliably fulfill your
                       order for Japan used tires and tire scrap materials,
                       please fill in the contact form below. We are happy to
@@ -47,7 +47,7 @@ const EngContact = () => {
                       />
                       <div
                         id="error_message"
-                        style={{ color: "red", fontWeight: "bold" }}
+                        style="color:red;font-weight:bold;"
                       >
                         Error, please provide the required information.
                       </div>
@@ -250,8 +250,9 @@ const EngContact = () => {
                     <script src="https://www.google.com/recaptcha/api.js?render=6Lf_j1gmAAAAALZFKxZWd1-MqfEOZKd02Sp3w9sG"></script>
                     <script>
                       {/* document.getElementById("mail_form").addEventListener('submit', onSubmit);
+
                         function onSubmit(e) 
-                        {
+                    {
                         e.preventDefault();
                         grecaptcha.ready(function() 
                         {
@@ -263,7 +264,7 @@ const EngContact = () => {
                                 document.getElementById("mail_form").submit();
                             });
                         });
-                        } */}
+                    } */}
                     </script>
                   </div>
                 </div>

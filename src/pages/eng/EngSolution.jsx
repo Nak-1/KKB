@@ -1,6 +1,12 @@
 import React, { useEffect } from "react";
 import { useEnglish } from "../../context/EnglishContext";
+
 import "../../css/sub.css";
+import "../../css/common.css";
+import "../../css/jquery.css";
+import "../../css/remodal.css";
+import "../../css/remodal-default.css";
+
 import img1 from "../../assets/homeimgs/bk_img11.png";
 import img2 from "../../assets/homeimgs/bk_img12.png";
 import img3 from "../../assets/homeimgs/bk_img13.png";

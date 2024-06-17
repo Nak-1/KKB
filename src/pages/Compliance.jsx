@@ -1,9 +1,10 @@
 import React from "react";
-import img2 from "../assets/homeimgs/bk_img12.png";
 import img3 from "../assets/homeimgs/bk_img13.png";
 import img4 from "../assets/homeimgs/bk_img14.png";
 import img5 from "../assets/homeimgs/bk_img15.png";
 
+import "../css/style.css"
+import "../css/jquery.css"
 
 const Compliance = () => {
   return (

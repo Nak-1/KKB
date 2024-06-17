@@ -12,6 +12,9 @@ import imgg5 from "../assets/homeimgs/img06.png";
 import news_logo from "../assets/news_logo.png";
 import bk_img03 from "../assets/bk_img03.png"
 
+import "../css/style.css"
+import "../css/jquery.css"
+
 const images = [`${img1}`, `${img2}`, `${img3}`, `${img4}`, `${img5}`];
 const BackgroundSlider = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

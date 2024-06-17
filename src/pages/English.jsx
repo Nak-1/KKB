@@ -1,8 +1,13 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useEnglish } from "../context/EnglishContext";
 import img1 from "../assets/eng/image copy 3.png";
 import img2 from "../assets/eng/image copy 4.png";
 import img3 from "../assets/eng/image copy 5.png";
+
+import "../css/jquery.css";
+import "../css/common.css";
+import "../css/top.css";
+import "../css/slick.css";
 
 const images = [`${img1}`, `${img2}`, `${img3}`];
 const BackgroundSlider = () => {
@@ -17,8 +22,8 @@ const BackgroundSlider = () => {
         setPrevImageIndex(currentImageIndex);
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
         setFade(true);
-      }, 1000); // Match the CSS transition duration
-    }, 5000); // Change image every 5 seconds
+      }, 1000);
+    }, 5000);
     return () => clearInterval(intervalId);
   }, [currentImageIndex]);
 
@@ -51,8 +56,7 @@ const English = () => {
     <body id="topPage">
       <div id="wrap">
         <div id="mvBlock">
-      <BackgroundSlider />
-
+          <BackgroundSlider />
         </div>
         <div id="mainContent">
           <div class="msgBlock">

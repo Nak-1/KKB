@@ -1,5 +1,8 @@
 import React from "react";
-import img from "../assets/pic_company.png"
+import img from "../assets/pic_company.png";
+
+import "../css/style.css"
+import "../css/jquery.css"
 
 const Annai = () => {
   return (
@@ -50,6 +53,7 @@ const Annai = () => {
                     <a
                       href="https://www.kkb-tire.co.jp/wp/wp-content/uploads/2024_honsha.pdf"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       営業日カレンダーを見る
                     </a>
@@ -68,6 +72,7 @@ const Annai = () => {
                 <a
                   href="https://www.google.com/maps/d/viewer?ll=36.12901905118116%2C139.37341466137696&z=17&mid=1o08kQedu3M_BwLF0WkCCNjVTpCw"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   地図アプリで見る
                 </a>
@@ -102,6 +107,7 @@ const Annai = () => {
                     <a
                       href="https://www.google.com/maps/d/viewer?ll=35.66556%2C139.75502000000006&z=17&mid=1o08kQedu3M_BwLF0WkCCNjVTpCw"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       地図アプリで見る
                     </a>
@@ -132,6 +138,7 @@ const Annai = () => {
                       <a
                         href="https://www.google.com/maps/d/viewer?ll=38.04258599999999%2C140.76163700000006&z=17&mid=1o08kQedu3M_BwLF0WkCCNjVTpCw"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         地図アプリで見る
                       </a>
@@ -140,6 +147,7 @@ const Annai = () => {
                       <a
                         href="https://www.kkb-tire.co.jp/wp/wp-content/uploads/2024_touhoku.pdf"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         営業日カレンダーを見る
                       </a>
@@ -171,6 +179,7 @@ const Annai = () => {
                       <a
                         href="https://www.google.co.jp/maps/place/%E3%80%92028-7111+%E5%B2%A9%E6%89%8B%E7%9C%8C%E5%85%AB%E5%B9%A1%E5%B9%B3%E5%B8%82%E5%A4%A7%E6%9B%B4%E7%AC%AC%EF%BC%93%EF%BC%95%E5%9C%B0%E5%89%B2%EF%BC%96%EF%BC%93/@39.9256156,141.0937745,17z/data=!3m1!4b1!4m5!3m4!1s0x5f85143e95b0f2d7:0x9170f6e7c48ce9be!8m2!3d39.9256115!4d141.0959632"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         地図アプリで見る
                       </a>
@@ -202,6 +211,7 @@ const Annai = () => {
                       <a
                         href="https://www.google.com/maps/d/viewer?ll=42.853790000000004%2C141.613523&z=17&mid=1o08kQedu3M_BwLF0WkCCNjVTpCw"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         地図アプリで見る
                       </a>
@@ -210,6 +220,7 @@ const Annai = () => {
                       <a
                         href="https://www.kkb-tire.co.jp/wp/wp-content/uploads/2024_hokkaido.pdf"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         営業日カレンダーを見る
                       </a>
@@ -320,6 +331,7 @@ const Annai = () => {
                     <a
                       href="https://goo.gl/maps/qiQAYiXUGgprR86A6"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       地図アプリで見る
                     </a>
@@ -343,6 +355,7 @@ const Annai = () => {
                     <a
                       href="https://goo.gl/maps/ofF3oMUF5C4RbWKT9"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       地図アプリで見る
                     </a>
@@ -366,6 +379,7 @@ const Annai = () => {
                     <a
                       href="https://goo.gl/maps/L3zm2KyjNzGMHKyc6"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       地図アプリで見る
                     </a>
@@ -389,6 +403,7 @@ const Annai = () => {
                     <a
                       href="https://goo.gl/maps/EDmFmaeDS5dWgZFH9"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       地図アプリで見る
                     </a>
@@ -431,13 +446,18 @@ const Annai = () => {
                     <a
                       href="https://www.google.co.jp/maps/place/%E3%80%92360-0853+%E5%9F%BC%E7%8E%89%E7%9C%8C%E7%86%8A%E8%B0%B7%E5%B8%82%E7%8E%89%E4%BA%95%EF%BC%97%E2%88%92%EF%BC%97/@36.166689,139.3536568,17z/data=!3m1!4b1!4m5!3m4!1s0x601ed7e577437703:0xbc589dc85f3853c5!8m2!3d36.1666847!4d139.3558455"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       地図アプリで見る
                     </a>
                   </div>
                   　　　　　　　　　　　　　　
                   <div class="btnStyle01 fl">
-                    <a href="http://www.ts-marque.jp/" target="_blank">
+                    <a
+                      href="http://www.ts-marque.jp/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       ホームページリンク
                     </a>
                   </div>
@@ -476,6 +496,7 @@ const Annai = () => {
                     <a
                       href="https://www.google.co.jp/maps/place/%E3%80%92350-2218+%E5%9F%BC%E7%8E%89%E7%9C%8C%E9%B6%B4%E3%83%B6%E5%B3%B6%E5%B8%82%E6%9F%B3%E6%88%B8%E7%94%BA%EF%BC%97%E2%88%92%EF%BC%96/@35.9236132,139.3923501,17z/data=!3m1!4b1!4m5!3m4!1s0x6018d7bcc028669f:0x337028e5706ff4d3!8m2!3d35.9236089!4d139.3945388"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       地図アプリで見る
                     </a>
@@ -507,6 +528,7 @@ const Annai = () => {
                     <a
                       href="https://www.google.com/maps/d/viewer?ll=36.128445%2C139.37567&#038;z=17&#038;mid=1o08kQedu3M_BwLF0WkCCNjVTpCw"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       地図アプリで見る
                     </a>
@@ -541,6 +563,7 @@ const Annai = () => {
                     <a
                       href="https://goo.gl/maps/EDmFmaeDS5dWgZFH9"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       地図アプリで見る
                     </a>
@@ -577,6 +600,7 @@ const Annai = () => {
                     <a
                       href="https://www.google.com/maps/d/viewer?ll=36.129194000000034%2C139.37143700000001&#038;z=17&#038;mid=1o08kQedu3M_BwLF0WkCCNjVTpCw"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       地図アプリで見る
                     </a>
@@ -612,12 +636,17 @@ const Annai = () => {
                     <a
                       href="https://www.google.com/maps/d/viewer?ll=36.129194000000034%2C139.37143700000001&#038;z=17&#038;mid=1o08kQedu3M_BwLF0WkCCNjVTpCw"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       地図アプリで見る
                     </a>
                   </div>
                   <div class="btnStyle01 fl">
-                    <a href="https://www.kkb-green.com/" target="_blank">
+                    <a
+                      href="https://www.kkb-green.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       ホームページリンク
                     </a>
                   </div>
@@ -649,6 +678,7 @@ const Annai = () => {
                     <a
                       href="https://www.google.com/maps/d/viewer?ll=36.129194000000034%2C139.37143700000001&#038;z=17&#038;mid=1o08kQedu3M_BwLF0WkCCNjVTpCw"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       地図アプリで見る
                     </a>
@@ -657,6 +687,7 @@ const Annai = () => {
                     <a
                       href="https://www.globalmanpower.co.jp/index.html"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       ホームページリンク
                     </a>

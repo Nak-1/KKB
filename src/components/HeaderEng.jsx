@@ -1,6 +1,11 @@
 import React from "react";
 import logo from "../assets/logo.png";
 
+import "../css/jquery.css"
+import "../css/common.css";
+import "../css/top.css"
+import "../css/slick.css"
+
 const HeaderEng = () => {
   return (
     <header1 id="header1">

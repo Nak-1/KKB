@@ -1,6 +1,12 @@
 import React, { useEffect } from "react";
 import { useEnglish } from "../../context/EnglishContext";
+
 import "../../css/sub.css";
+import "../../css/common.css"
+import "../../css/jquery.css"
+import "../../css/remodal.css"
+import "../../css/remodal-default.css"
+
 const EngAttention = () => {
   const { setIsEnglishPage } = useEnglish();
 

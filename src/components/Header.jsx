@@ -5,17 +5,12 @@ import Logo2 from "../assets/logo_w.png";
 import location1 from "../assets/icon_access.svg";
 import locatoin2 from "../assets/iconmonstr-location-1.svg";
 
+import "../css/style.css"
+import "../css/jquery.css"
+
 const Header = () => {
   const location = useLocation();
   const { pathname } = location;
-  // const getHeaderStyle = () => {
-  //   switch (pathname) {
-  //     case "/company":
-  //       return { color: "black" };
-  //     default:
-  //       return { color: "white" };
-  //   }
-  // };
   const [menu, setMenu] = useState(false);
   const handle = () => {
     setMenu(!menu);
@@ -210,7 +205,7 @@ const Header = () => {
                 </span>
               </span>
             </div>
-            {menu ? (
+            {/* {menu ? ( */}
               <div id="menu" class="fullHeight">
                 <div class="inner">
                   <div class="closeBtn"></div>
@@ -470,9 +465,9 @@ const Header = () => {
                   </ul>
                 </div>
               </div>
-            ) : (
+            {/* ) : (
               ""
-            )}
+            )} */}
           </nav>
         </header>
       </div>

@@ -192,6 +192,7 @@
 }
 #mainContent .one_columnWrap .mainBlock .contBoxinner,
 #mainContent .two_columnWrap .mainBlock .contBoxinner {
+  width: 1100px;
   position: relative;
   margin: 0 auto;
   padding: 100px 0 0;
@@ -1673,14 +1674,14 @@
   }
 
   #reason #kvBlock {
-    /* background: url(/eng/common/img/solution/kv_img.jpg) center no-repeat; */
+    background: url(https://www.kkb-tire.co.jp/eng/common/img/solution/kv_img.jpg) center no-repeat;
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
   }
 
   #products #kvBlock {
-    /* background: url(/eng/common/img/products/kv_img.jpg) center no-repeat; */
+    background: url(https://www.kkb-tire.co.jp/eng/common/img/products/kv_img.jpg) center no-repeat;
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-size: cover;

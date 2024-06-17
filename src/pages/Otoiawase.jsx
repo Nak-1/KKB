@@ -1,71 +1,22 @@
 import React, { useState } from "react";
-import emailjs, { send } from "emailjs-com";
 import axios from "axios";
+// import "../css/common.css";
 
 const Otoiawase = () => {
-  // const [companyName, setCompanyName] = useState("");
-  // const [companybusyo, setCompanyBusyo] = useState("");
-  // const [name1, setName1] = useState("");
-  // const [name2, setName2] = useState("");
-  // const [furi1, setFuri1] = useState("");
-  // const [furi2, setFuri2] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [tell, setTell] = useState("");
-  // const [zip1, setZip1] = useState("");
-  // const [zip2, setZip2] = useState("");
-  // const [add, setAdd] = useState("");
-  // const [add2, setAdd2] = useState("");
-  // const [etc, setEtc] = useState("");
-
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-  //   const templateParams = {
-  //     from_name: name,
-  //     to_name: "Recipient Name",
-  //     message: message,
-  //     reply_to: email,
-  //   };
-
-  //   emailjs
-  //     .send(
-  //       "YOUR_SERVICE_ID",
-  //       "YOUR_TEMPLATE_ID",
-  //       templateParams,
-  //       "YOUR_USER_ID"
-  //     )
-  //     .then(
-  //       (response) => {
-  //         console.log(
-  //           "Email sent successfully!",
-  //           response.status,
-  //           response.text
-  //         );
-  //         alert("Email sent successfully!");
-  //       },
-  //       (error) => {
-  //         console.log("Failed to send email.", error);
-  //         alert("Failed to send email.");
-  //       }
-  //     );
-  //   setEmail("");
-  //   setMessage("");
-  //   setName("");
-  // };
-
   const [formData, setFormData] = useState({
-    companyName: "",
-    companybusyo: "",
-    name1: "",
-    name2: "",
-    furi1: "",
-    furi2: "",
-    email: "",
-    tell: "",
-    zip1: "",
-    zip2: "",
-    add: "",
-    add2: "",
-    // etc: "",
+    companyname: '',
+    companybusyo: '',
+    name1: '',
+    name2: '',
+    furi1: '',
+    furi2: '',
+    email: '',
+    tell: '',
+    zip1: '',
+    zip2: '',
+    add: '',
+    add2: '',
+    etc: '',
   });
   const [status, setStatus] = useState("");
 
@@ -86,6 +37,7 @@ const Otoiawase = () => {
       );
       console.log("Response:", response.data);
       setStatus("Email sent successfully!");
+      alert('Data successfully submitted!');
     } catch (error) {
       console.error(
         "Error:",
@@ -144,7 +96,7 @@ const Otoiawase = () => {
                     <dd>
                       <input
                         type="text"
-                        name="companyName"
+                        name="companyname"
                         id="companyname"
                         size="20"
                         class="asktext3"
@@ -242,7 +194,7 @@ const Otoiawase = () => {
                     </dd>
                   </dl>
                   <dl>
-                    <dt>name2</dt>
+                    <dt>お電話番号</dt>
                     <dd>
                       <input
                         type="tel"
@@ -270,6 +222,7 @@ const Otoiawase = () => {
                         onChange={handleChange}
                         required
                       />
+                      ------
                       <input
                         name="zip2"
                         type="text"
@@ -406,13 +359,12 @@ const Otoiawase = () => {
                   同意しない
                 </p>
                 <div class="btnStyle03">
-                  {/* <input
+                  <input
                     type="submit"
                     value="内容を送信"
                     name="kakunin"
                     id="kakunin"
-                    disabled="disabled"
-                  /> */}
+                  />
                   <input type="reset" name="reset" value="リセット" />
                 </div>
                 <div style={{ border: "0px", textAlign: "left" }}>
@@ -420,11 +372,45 @@ const Otoiawase = () => {
                     type="text/javascript"
                     src="https://seal.fujissl.jp/getSeal.do?cn=www.kkb-tire.co.jp"
                   ></script>
+                  <img
+                    name="secureSeal"
+                    src="https://seal.fujissl.jp/buildSign.do?ca=www.kkb-tire.co.jp&amp;ch=www.kkb-tire.co.jp&amp;metas=w:0,i:0,d:0&amp;design=default"
+                    oncontextmenu="return false;"
+                    border="0"
+                    alt=""
+                    usemap="#trust_seal"
+                    width="140px"
+                  />
+                  <map name="trust_seal" id="trust_seal">
+                    <area
+                      alt="Click to Verify - This site has chosen an SSL Certificate to improve Web site security"
+                      title=""
+                      href="javascript:fujissl_splash()"
+                      shape="rect"
+                      coords="0,0,210,104"
+                      tabindex="-1"
+                      style={{ outline: "none" }}
+                    />
+                    <area
+                      alt=""
+                      title=""
+                      href="javascript:symcBuySSL()"
+                      shape="rect"
+                      coords="63,58,115,81"
+                      style={{ outline: "none" }}
+                    />
+                  </map>
+                  <a
+                    href="https://seal.fujissl.jp/validationScreen.do?cn=www.kkb-tire.co.jp"
+                    target="FSVSP_Splash"
+                    id="FSVSPBTN"
+                    style={{ display: "none" }}
+                  ></a>
                 </div>
               </div>
-              <input name="" type="submit" value="送信" />
+              {/* <input name="" type="submit" value="送信" /> */}
             </form>
-            <script src="https://www.google.com/recaptcha/api.js?render=6Lf_j1gmAAAAALZFKxZWd1-MqfEOZKd02Sp3w9sG"></script>
+            {/* <script src="https://www.google.com/recaptcha/api.js?render=6Lf_j1gmAAAAALZFKxZWd1-MqfEOZKd02Sp3w9sG"></script> */}
           </section>
         </div>
       </div>

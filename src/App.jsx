@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Route,
   Routes,
-  useLocation,
 } from "react-router-dom";
 import Header from "./components/Header";
 import HeaderEng from "./components/HeaderEng";
@@ -25,13 +24,6 @@ import EngCase from "./pages/eng/EngCase";
 import EngCompany from "./pages/eng/EngCompany";
 import EngContact from "./pages/eng/EngContact";
 import { EnglishProvider, useEnglish } from "./context/EnglishContext";
-
-import "./css/style.css";
-
-import "./css/common.css";
-// import "./css/top.css";
-// import "./css/slick.css";
-// import "./jquery.fs.boxer.css";
 
 const AppContent = () => {
   const { isEnglishPage } = useEnglish();

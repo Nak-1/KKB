@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import { useEnglish } from "../../context/EnglishContext";
+
 import "../../css/sub.css";
+import "../../css/common.css";
+import "../../css/jquery.css";
 
 const EngContact = () => {
   const { setIsEnglishPage } = useEnglish();
@@ -245,23 +248,6 @@ const EngContact = () => {
                       </div>
                     </form>
                     <script src="https://www.google.com/recaptcha/api.js?render=6Lf_j1gmAAAAALZFKxZWd1-MqfEOZKd02Sp3w9sG"></script>
-                    <script>
-                      {/* document.getElementById("mail_form").addEventListener('submit', onSubmit);
-                      function onSubmit(e) 
-                      {
-                        e.preventDefault();
-                        grecaptcha.ready(function() 
-                        {
-                          grecaptcha.execute('6Lf_j1gmAAAAALZFKxZWd1-MqfEOZKd02Sp3w9sG', {action: 'submit'}).then(function(token)
-                          {
-                            // Add your logic to submit to your backend server here.
-                            var recaptchaToken = document.getElementById('recaptchaToken');
-                            recaptchaToken.value = token;
-                            document.getElementById("mail_form").submit();
-                          });
-                        });
-                      } */}
-                    </script>
                   </div>
                 </div>
               </div>

@@ -3,6 +3,9 @@ import Logo from "../assets/logo_w.png";
 import bnr_jsa from "../assets/bnr_jsa.png";
 import bnr_musashi from "../assets/bnr_musashi.png";
 
+import "../css/style.css"
+import "../css/jquery.css"
+
 const Footer = () => {
   return (
     <div id="topPage">

@@ -1,5 +1,10 @@
 import React from "react";
 
+import "../css/jquery.css"
+import "../css/common.css";
+import "../css/top.css"
+import "../css/slick.css"
+
 const FooterEng = () => {
   return (
     <footer id="footer">

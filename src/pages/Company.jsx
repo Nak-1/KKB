@@ -1,5 +1,8 @@
 import React from "react";
-import img from "../assets/pic_company.png"
+import img from "../assets/pic_company.png";
+
+import "../css/style.css"
+import "../css/jquery.css"
 
 const Company = () => {
   return (
@@ -131,7 +134,10 @@ const Company = () => {
                       href="https://www.kkb-tire.co.jp/wp/wp-content/uploads/7355cdf2b841e92b9fa6f273aca50ae1-1.png"
                       class="lightbox"
                     >
-                      <img src="https://www.kkb-tire.co.jp/wp/wp-content/uploads/7355cdf2b841e92b9fa6f273aca50ae1-1.png" />
+                      <img
+                        src="https://www.kkb-tire.co.jp/wp/wp-content/uploads/7355cdf2b841e92b9fa6f273aca50ae1-1.png"
+                        alt=""
+                      />
                       <p class="zoom">クリックして拡大する</p>
                     </a>
                   </div>

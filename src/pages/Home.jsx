@@ -145,7 +145,7 @@ const Home = () => {
                 </div>
                 <div class="txt">
                   <h2>
-                    <a href="/business/recycle/">再資源化</a>
+                    <a href="/business">再資源化</a>
                   </h2>
                   <p>
                     3Rのリサイクルで、
@@ -160,7 +160,7 @@ const Home = () => {
                 </div>
                 <div class="txt">
                   <h2>
-                    <a href="/compliance/">健全化</a>
+                    <a href="/compliance">健全化</a>
                   </h2>
                   <p>
                     コンプライナンスを徹底し、
@@ -175,7 +175,7 @@ const Home = () => {
                 </div>
                 <div class="txt">
                   <h2>
-                    <a href="/business/green/">快適化</a>
+                    <a href="/business">快適化</a>
                   </h2>
                   <p>
                     安らぎとくつろぎを、

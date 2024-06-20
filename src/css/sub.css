@@ -31,7 +31,11 @@
   vertical-align: middle;
   background: none;
 }
-#mainContent .ttlWrap {
+#mainContent .ttlWrap,
+#reason #mainContent .ttlWrap,
+#products #mainContent .ttlWrap,
+#case #mainContent .ttlWrap 
+{
   width: 100%;
   padding: 50px 0;
   background: #5cbee7;

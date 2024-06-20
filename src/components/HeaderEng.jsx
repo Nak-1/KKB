@@ -1,10 +1,10 @@
 import React from "react";
 import logo from "../assets/logo.png";
 
-import "../css/jquery.css"
+import "../css/jquery.css";
 import "../css/common.css";
-import "../css/top.css"
-import "../css/slick.css"
+import "../css/top.css";
+import "../css/slick.css";
 
 const HeaderEng = () => {
   return (
@@ -42,7 +42,7 @@ const HeaderEng = () => {
             </ul>
             <ul id="subNavi">
               <li>
-                <a href="tel:+81485367755">+81-48-536-7755</a>
+                <a href="tel:+(025)384-8032">(025)384-8032</a>
               </li>
               <li>
                 <a href="http://www.kkb-tire.co.jp/" target="_blank">
@@ -90,7 +90,7 @@ const HeaderEng = () => {
           </ul>
           <ul id="subNavi">
             <li>
-              <a href="tel:+81485367755">+81-48-536-7755</a>
+            <a href="tel:+(025)384-8032">(025)384-8032</a>
             </li>
             <li>
               <a href="/" target="_blank">

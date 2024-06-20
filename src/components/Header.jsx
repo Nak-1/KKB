@@ -1,12 +1,38 @@
-import React, { useState } from "react";
+import React, { Component, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Logo1 from "../assets/logo.png";
 import Logo2 from "../assets/logo_w.png";
 import location1 from "../assets/icon_access.svg";
 import locatoin2 from "../assets/iconmonstr-location-1.svg";
 
-import "../css/style.css"
-import "../css/jquery.css"
+import "../css/style.css";
+import "../css/jquery.css";
+
+// class Appp extends Component {
+//   constructor(props) {
+//     super(props)
+//     this.state = { matches: window.matchMedia("(min-heigh: 768px)").matches };
+//   }
+
+//   componentDidMount() {
+//     const handler = e => this.setState({matches: e.matches});
+//     window.matchMedia("(min-height: 768px)").addEventListener('change', handler);
+//   }
+//   render() {
+//     // return (
+//     //   <div >
+//     //   {this.state.matches && (<h1>Big Screen</h1>)}
+//     //   {!this.state.matches && (<h3>Small Screen</h3>)}
+//     //   </div>
+//     // );
+//     return (
+//       <>
+//       {this.state.matches && (<h1>Big Screen</h1>)}
+//       {!this.state.matches && (<h3>Small Screen</h3>)}
+//       </>
+//     )
+//   }
+// }
 
 const Header = () => {
   const location = useLocation();
@@ -14,7 +40,10 @@ const Header = () => {
   const [menu, setMenu] = useState(false);
   const handle = () => {
     setMenu(!menu);
+    console.log("dfddfgd");
   };
+
+  
   return (
     <div id="topPage">
       <div id="wrap">
@@ -205,10 +234,10 @@ const Header = () => {
                 </span>
               </span>
             </div>
-            {/* {menu ? ( */}
+            {menu ? (
               <div id="menu" class="fullHeight">
                 <div class="inner">
-                  <div class="closeBtn"></div>
+                  <div class="closeBtn" onClick={handle}></div>
                   <div class="sp">
                     <dl class="accordion">
                       <dt>会社情報</dt>
@@ -465,9 +494,9 @@ const Header = () => {
                   </ul>
                 </div>
               </div>
-            {/* ) : (
+            ) : (
               ""
-            )} */}
+            )}
           </nav>
         </header>
       </div>
